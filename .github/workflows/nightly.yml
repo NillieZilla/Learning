@@ -1,0 +1,12 @@
+name: Nightly Job
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  nightly:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run maintenance script
+        run: echo "Nightly job running..."
